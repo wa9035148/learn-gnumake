@@ -5,5 +5,8 @@ some_file: *.c
 	touch f1.c
 	touch f2.c
 
+clean-dry:
+	git clean -dfxn
+
 clean:
-	rm -rf *.c
+	git clean -dfx
