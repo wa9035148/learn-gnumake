@@ -6,5 +6,8 @@ some_binary:
 	echo $(wrong)
 	echo $(objects)
 
+clean-dry:
+	git clean -dfxn
+
 clean:
-	rm -f *.c
+	git clean -dfx
